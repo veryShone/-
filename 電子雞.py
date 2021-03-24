@@ -80,7 +80,7 @@ class Move():#動作選項
     def run_move(cls,choise): #執行動作
         if Move.list_move[choise] =='吃飯': #列食物 #選食物
             Food.list_選項()#在上面
-            print('吃飽睡 睡飽吃 _(:3 」∠ )_')
+
             
         elif Move.list_move[choise] =='摸摸':
             #加好感
@@ -192,6 +192,7 @@ def eat_food(選號): #吃食物
         pet.摳摳 -= Food.food_list[選號][1]
         pet.飽足 += Food.food_list[選號][2]
         pet.體脂 += Food.food_list[選號][3]
+        print('吃飽睡 睡飽吃 _(:3 」∠ )_')
         input('zZZ')
 
 
@@ -222,7 +223,7 @@ def eat_food(選號): #吃食物
 # 遊戲開始 ------------------------------------------------------------------------
 print('             GAME BY PYTHON\n\n')
 print('                MADE BY')
-print('        張凱翔','陳允宏','羅道筠\n\n')
+print('        張凱翔','陳允泓','羅道筠\n\n')
 print('                WARNING\n')
 print('    遊戲內容純屬虛構  若有雷同純屬巧合\n')
 print('    遊戲內容若有釣魚成分絕無營利之意圖\n')
