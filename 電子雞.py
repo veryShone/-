@@ -301,7 +301,20 @@ while 1:
 
     pet.list_Condition()  #狀態欄
     
-    if pet.飽足<= 0 or pet.好感<= 0 or pet.衛生<= 0 or pet.體脂>= 100: #game over判定
+    if pet.飽足<= 0:
+        print('\n餓死啦  _(┐「﹃ﾟ｡)_')
+        pet.端火鍋()
+        break
+    elif pet.好感<= 0:
+        print('\n氣死啦  (╬☉д⊙)')
+        pet.端火鍋()
+        break
+    elif pet.衛生<= 0:
+        print('\n髒死了 ಠ౪ಠ')
+        pet.端火鍋()
+        break
+    elif pet.體脂>= 100:
+        print('\n肥死啦   0(:3　)～ (､3_ヽ)_')
         pet.端火鍋()
         break
 
